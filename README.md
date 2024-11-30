@@ -45,3 +45,26 @@ struct Review {
 
 #### 3. **Storing Review Data**
 Load data from the **`reviews.csv`** file into a vector of **`Review`** objects.
+
+```c++
+std::vector<Review> revs;
+std::ifstream file("resources/reviews.csv");
+if (file) {
+    std::string line;
+    std::getline(file, line); // Skip header
+    while (std::getline(file, line)) {
+        uint16_t pos = 0, last = 0;
+        pos = line.find(',', last);
+        uint32_t id = std::stoi(line.substr(last, pos - last));
+        last = pos + 1;
+        pos = line.find(',', last);
+        uint16_t rating = std::stoi(line.substr(last, pos - last));
+        last = pos + 1;
+        revs.emplace_back(rating, id, line.substr(last, pos - last));
+    }
+} else {
+    throw std::runtime_error("[Vader](ERROR) Cannot open reviews.csv");
+}
+```
+
+
