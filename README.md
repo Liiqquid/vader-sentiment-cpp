@@ -27,9 +27,10 @@ if (lexicon) {
     }
     lexicon.close();
 } else throw std::runtime_error("[Vader](ERROR) Cannot open lexicon.txt");
+```
 
 #### 2. **Storing Review Data**
-Define a Review struct to store review details: ID, rating, and text.
+Define a **`Review`** struct to store review details: ID, rating, and text.
 
 ```c++ 
 struct Review {
@@ -40,6 +41,7 @@ struct Review {
     Review(uint16_t rating, uint64_t id, std::string corpus) :
         m_id(id), m_rating(rating), m_corpus(corpus) {};
 };
+```
 
 #### 3. **Storing Review Data**
-Load data from the reviews.csv file into a vector of Review objects.
+Load data from the **`reviews.csv`** file into a vector of **`Review`** objects.
