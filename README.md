@@ -1,9 +1,9 @@
 # `vader-sentiment-cpp`
 
-## 🚀 Quick Start
+## Quick Start
 **`vader-sentiment-cpp`** is a fast, C++ port of the **Python NLTK Vader Sentiment Analyzer**, optimized for speed. This version retains key functionality while being lighter and quicker, ideal for performance-sensitive applications.
 
-## 🧠 Approach
+## Approach
 This implementation mimics the core sentiment analysis features of the original model using a sentiment lexicon to classify text as positive, negative, or neutral.
 
 ### 🔧 Example Usage
