@@ -72,5 +72,13 @@ Evaluate the sentiment of the first review using **`vader::eval`**.
 
 ```c++
 vader::eval(revs[0].m_corpus, lexicals);
-}
 ```
+
+## Citation
+/**
+ * Citation:
+ * Hutto, C. J. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.
+ * Retrieved from https://github.com/cjhutto/vaderSentiment
+ */
+
+
