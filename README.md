@@ -76,17 +76,5 @@ vader::eval(revs[0].m_corpus, lexicals);
 
 ## Citation
 ```c++
-/**
- * @file vader-sentiment-cpp.cpp
- * 
- * @brief C++ port of the Python NLTK Vader Sentiment Analyzer.
- * 
- * Citation:
- * 
- * Hutto, C. J. (2014). "VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text."
- * In Proceedings of the 8th International Conference on Weblogs and Social Media (ICWSM 2014).
- * Retrieved from https://github.com/cjhutto/vaderSentiment
- * 
- * This project is a C++ implementation of the original VADER sentiment analysis model by C.J. Hutto.
- */
+Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
 ```
