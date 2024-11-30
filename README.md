@@ -67,4 +67,10 @@ if (file) {
 }
 ```
 
+#### 4. **Evaluating Sentiment**
+Evaluate the sentiment of the first review using **`vader::eval`**.
 
+```c++
+vader::eval(revs[0].m_corpus, lexicals);
+}
+```
